@@ -1,0 +1,77 @@
+/* admin.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f7f9fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.admin-container {
+    background-color: white;
+    padding: 40px 50px;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 900px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+
+.user-table th,
+.user-table td {
+    padding: 14px 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.user-table th {
+    background-color: #6c63ff;
+    color: white;
+    font-weight: bold;
+}
+
+.user-table tr:nth-child(even) {
+    background-color: #f1f3f7;
+}
+
+.user-table tr:hover {
+    background-color: #e8edff;
+}
+
+.back-link {
+    margin-top: 20px;
+}
+
+.back-link .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.back-link .btn:hover {
+    background-color: #584ce0;
+}

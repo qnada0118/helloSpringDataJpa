@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" th:href="@{/css/admin.css}" />
+</head>
+<body>
+<div class="admin-container">
+    <h1>Admin Dashboard</h1>
+
+    <div class="nav-buttons">
+        <a class="btn" th:href="@{/admin/users}">사용자 관리</a>
+        <a class="btn" th:href="@{/admin/products}">상품 관리</a>
+    </div>
+</div>
+</body>
+</html>
