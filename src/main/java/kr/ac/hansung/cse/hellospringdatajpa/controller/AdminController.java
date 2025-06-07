@@ -23,21 +23,21 @@ public class AdminController {
     // 관리자 대시보드
     @GetMapping
     public String showAdminDashboard() {
-        return "admin"; // templates/admin.html
+        return "admin";
     }
 
     // 사용자 관리
     @GetMapping("/users")
     public String showUserList(Model model) {
         model.addAttribute("users", userRepository.findAll());
-        return "admin_users"; // templates/admin-users.html
+        return "admin_users";
     }
 
     // 상품 목록 (관리자용)
     @GetMapping("/products")
     public String showProductList(Model model) {
         model.addAttribute("listProducts", productService.listAll());
-        return "index"; // 같은 index.html 사용
+        return "index";
     }
 
     // 상품 등록 폼

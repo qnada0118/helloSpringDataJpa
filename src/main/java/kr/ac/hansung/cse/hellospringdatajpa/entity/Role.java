@@ -1,5 +1,3 @@
-// 📄 src/main/java/kr/ac/hansung/cse/hellospringdatajpa/entity/Role.java
-
 package kr.ac.hansung.cse.hellospringdatajpa.entity;
 
 import jakarta.persistence.*;

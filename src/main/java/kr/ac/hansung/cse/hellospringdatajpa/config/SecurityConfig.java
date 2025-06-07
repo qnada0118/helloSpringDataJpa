@@ -1,6 +1,6 @@
 package kr.ac.hansung.cse.hellospringdatajpa.config;
 
-import kr.ac.hansung.cse.hellospringdatajpa.service.CustomUserDetailsService;
+import kr.ac.hansung.cse.hellospringdatajpa.service.UserDetailsService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -18,8 +18,8 @@ import org.springframework.security.web.*;
 @RequiredArgsConstructor
 public class SecurityConfig {
 
-    private final CustomUserDetailsService userDetailsService;
-    private final CustomAuthenticationSuccessHandler successHandler; // ✅ 이 줄 추가!!
+    private final UserDetailsService userDetailsService;
+    private final AuthSuccessHandler successHandler;
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {

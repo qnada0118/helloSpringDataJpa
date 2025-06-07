@@ -1,5 +1,3 @@
-// 📄 src/main/java/kr/ac/hansung/cse/hellospringdatajpa/service/CustomUserDetailsService.java
-
 package kr.ac.hansung.cse.hellospringdatajpa.service;
 
 import kr.ac.hansung.cse.hellospringdatajpa.entity.User;
@@ -16,7 +14,7 @@ import java.util.Collection;
 @Service
 @Transactional
 @RequiredArgsConstructor
-public class CustomUserDetailsService implements UserDetailsService {
+public class UserDetailsService implements org.springframework.security.core.userdetails.UserDetailsService {
 
     private final UserRepository userRepository;
 

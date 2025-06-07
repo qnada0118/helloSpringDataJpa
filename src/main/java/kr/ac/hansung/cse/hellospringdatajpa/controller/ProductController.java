@@ -19,7 +19,7 @@ public class ProductController {
     @Autowired
     private ProductService service;
 
-    @GetMapping({"", "/"}) // products 또는 /products/ 둘 다 매핑
+    @GetMapping({"", "/"})
     public String viewHomePage(Model model) {
         List<Product> listProducts = service.listAll();
         model.addAttribute("listProducts", listProducts);
